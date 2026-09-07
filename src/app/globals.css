@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --surface: #f6f9fc;
+  --foreground: #0f2138;
+  --muted: #5b6b7d;
+
+  --brand-blue-50: #eaf2ff;
+  --brand-blue-100: #d3e4fe;
+  --brand-blue-400: #2b7fe0;
+  --brand-blue-500: #0057b7;
+  --brand-blue-600: #00509f;
+  --brand-blue-700: #003d7a;
+  --brand-blue-900: #041b36;
+
+  --brand-green-50: #eafbf1;
+  --brand-green-100: #cdf3dc;
+  --brand-green-400: #2fb968;
+  --brand-green-500: #1c9950;
+  --brand-green-600: #167f42;
+  --brand-green-700: #106232;
+
+  --radius-lg: 1.25rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+
+  --color-brand-blue-50: var(--brand-blue-50);
+  --color-brand-blue-100: var(--brand-blue-100);
+  --color-brand-blue-400: var(--brand-blue-400);
+  --color-brand-blue-500: var(--brand-blue-500);
+  --color-brand-blue-600: var(--brand-blue-600);
+  --color-brand-blue-700: var(--brand-blue-700);
+  --color-brand-blue-900: var(--brand-blue-900);
+
+  --color-brand-green-50: var(--brand-green-50);
+  --color-brand-green-100: var(--brand-green-100);
+  --color-brand-green-400: var(--brand-green-400);
+  --color-brand-green-500: var(--brand-green-500);
+  --color-brand-green-600: var(--brand-green-600);
+  --color-brand-green-700: var(--brand-green-700);
+
+  --font-display: var(--font-poppins);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display), var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--brand-blue-100);
+  color: var(--brand-blue-900);
+}
+
+.balance {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
