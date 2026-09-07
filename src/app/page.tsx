@@ -95,9 +95,9 @@ export default function Home() {
             <div className="overflow-hidden rounded-[2rem] border-4 border-white shadow-2xl shadow-brand-blue-900/10">
               <Image
                 src="/images/equipe-hero.webp"
-                alt="Membre de l'équipe Sadi Services de Nettoyage, prête à intervenir à Conakry"
-                width={360}
-                height={795}
+                alt="Affiche Sadi Services de Nettoyage — nos services et zone d'intervention à Conakry"
+                width={1254}
+                height={1254}
                 priority
                 className="h-auto w-full object-cover"
               />
