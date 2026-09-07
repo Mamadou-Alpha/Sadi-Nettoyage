@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.fullName,
     locale: "fr_FR",
     type: "website",
-    images: [{ url: "/images/equipe-hero.webp", width: 360, height: 795 }],
+    images: [{ url: "/images/equipe-hero.webp", width: 1254, height: 1254 }],
   },
   twitter: {
     card: "summary_large_image",
